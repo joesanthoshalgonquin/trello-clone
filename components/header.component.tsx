@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <header>
       <div className="flex flex-col md:flex-row items-center p-5 bg-gray-500/10 rounded-b-2xl">
+        <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-br from-blue-400 to-[#4dc897] rounded-md filter blur-3xl opacity-50 -z-50"></div>
         <Image
           src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/1280px-Trello_logo.svg.png"
           alt="Trello Logo"
@@ -27,12 +28,12 @@ const Header = () => {
               Search
             </button>
           </form>
-          <Avatar name="Joe Santhosh" round color="#0055D1" size="50" />
+          <Avatar name="Joe Santhosh" round color="#4dc897" size="50" />
         </div>
       </div>
-      <div className="flex items-center justify-center px-5 md:py-5">
-        <p className="flex items-center p-5 text-sm font-light pr-5 rounded-xl w-fit shadow-xl bg-white italic max-w-3xl text-[#0055D1]">
-          <UserCircleIcon className="inline-block h-10 w-10 text-[#0055D1] mr-1" />
+      <div className="flex items-center justify-center px-5 py-2 md:py-5">
+        <p className="flex items-center p-5 text-sm font-light pr-5 rounded-xl w-fit shadow-xl bg-white italic max-w-3xl text-[#4dc897]">
+          <UserCircleIcon className="inline-block h-10 w-10 text-[#4dc897] mr-1" />
           GPT is summmarizing your tasks
         </p>
       </div>
